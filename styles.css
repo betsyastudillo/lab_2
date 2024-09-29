@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  /* background-color: rgb(231, 170, 207); */
+  background-color: rgb(232, 226, 230);
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #90c6df;
+}
+
+.navbar img {
+  width: 50px;
+}
+
+.navbar a{
+  text-decoration: none;
+  color: black;
+  padding: 20px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+/* CONTENEDOR */
+.container {
+  display: flex;
+  margin-top: 30px;
+}
+
+/* COLUMNAS */
+.row-left, .row-right {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.row-left {
+  height: 430px;
+  overflow-y: auto;
+  width: 500px;
+}
+
+.row-right {
+  width: 600px;
+}
+
+/* TARJETA IZQUIERDA */
+input[type="text"], [type="date"]{
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+}
+
+.boton {
+  display: flex;
+  justify-content: end;
+  margin: 20px 0;
+}
+
+.btn {
+  width: 160px;
+  height: 40px;
+  background-color: #90c6df;
+  border: #5d8ba1 1px solid;
+}
+
+.btn:hover {
+  background-color: #6da9c4;
+}
+
+/* TARJETA DERECHA */
+.row-right{
+  margin: 0 auto;
+}
+
+.row h2 {
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+.card {
+  margin-bottom: 15px;
+  padding: 15px;
+  border: 1px solid #ddd;
+}
+
+.card-inputs {
+  margin: 10px 0;
+}
+
+.card-internal {
+  background-color: antiquewhite;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.card-internal h5 p {
+  margin-left: 20px;
+}
+
+.completed {
+  text-decoration: line-through;
+  background-color: #68cf6a;
+}
+
+.completed-btn, .delete-btn {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.completed-btn {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  width: 48px;
+  font-size: 24px;
+  font-weight: bold;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.completed-btn:hover {
+  color: #4caf50;
+
+}
+
+.delete-btn {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  width: 48px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.delete-btn:hover {
+  color: red;
+}
